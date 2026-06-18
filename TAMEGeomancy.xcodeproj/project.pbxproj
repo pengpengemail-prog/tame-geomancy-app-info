@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015FD73505D4EAEA9712F4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2806BA7AB80326CB0E6B5E /* Assets.xcassets */; };
+		01B9AE969ABA9AFC1CA38809 /* BazhaiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBBF226F2D1601AA7481585 /* BazhaiViewModel.swift */; };
+		02798D4348590D9C164CD2D5 /* FlyingStarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59009B66DDF773E8730521A /* FlyingStarChartView.swift */; };
+		09795C0F0679B8DC0DC683A5 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8DEB8210811FF6557587AD /* HistoryStore.swift */; };
+		0B844CD24B8FF5368BCCB707 /* AnnualFortuneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60125698745E94EF7187FAB /* AnnualFortuneViewModel.swift */; };
+		23184306453596A7BA2B16B9 /* JiuyunOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06033E4130359A06A30C4152 /* JiuyunOverviewView.swift */; };
+		3A4C1B59130410BFED5858A3 /* TAMELocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19478DF961F58ADE67519A6D /* TAMELocalization.swift */; };
+		3B730987D193DBD3FDF5CD57 /* FloorPlanAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA6C9AA60B7864B83900B7 /* FloorPlanAnalysisViewModel.swift */; };
+		3ED2395067D3BED19A0944FF /* TAMEGeomancyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FF1B58B75F8DA2C0EEEF2 /* TAMEGeomancyApp.swift */; };
+		3F3897BD9FA1F0148B2307FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F34AA9925DC7156F0595D241 /* Localizable.strings */; };
+		51C92789722F5D1B1FC0ED1E /* YangGongFenjinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15249D86689F8DD803A57764 /* YangGongFenjinView.swift */; };
+		54C9B2A61CD8BE2C41463BC1 /* ReferenceKnowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8172D3DAC6371E61ED4E0 /* ReferenceKnowledgeView.swift */; };
+		5CB61BC64C32A47E17EFFDFA /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA53BFC71A79E6E0EC30D6 /* RecordsView.swift */; };
+		6D8AF63ECF889F2DCEE9CD69 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76422C390B1043C0A60F6377 /* Direction.swift */; };
+		77F65E89900D808A34550E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCBC879A58DA4A680C23AD14 /* InfoPlist.strings */; };
+		79CCBA9A706368D41FA150C7 /* BazhaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72938187EB821BC8D66F2C7 /* BazhaiView.swift */; };
+		822BAA775461CD3826A7E0A7 /* RecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A66E3AECB31D59216C534E /* RecordDetailView.swift */; };
+		934943C54092E2BDB34FA424 /* AnalysisHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35B20FFFEBEFEBDC86E040 /* AnalysisHubView.swift */; };
+		959DCA344326940534A3D972 /* HistoryBackupSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0094EA3A94A51BF99F9BBB /* HistoryBackupSupport.swift */; };
+		990C9FC2E8C9A9C10F6DE55C /* YangGongModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4AF3ED56284B2BC8625FA /* YangGongModels.swift */; };
+		9FD238AEBA776E835F20C814 /* NaqiAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2071B207C7845CBD8C172149 /* NaqiAnalyzer.swift */; };
+		A627D8BED00F02C6488F431F /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2241EC041C335863F8C306 /* CompassView.swift */; };
+		AE2C4DD2781E9CCC10CD7FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDC524D4A77A789960D014 /* ContentView.swift */; };
+		B202B584D32A4073B35FCC16 /* FengShuiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4EDBE3FB53C165589D413 /* FengShuiModels.swift */; };
+		BB618C1A9186BBA12E35EF77 /* RecordShareSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB01341656464347408C05 /* RecordShareSupport.swift */; };
+		C40811367110980865B614DA /* CompassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CBB8ADCC12578DA36C3AB /* CompassViewModel.swift */; };
+		C40F005A547CAE56BBB07895 /* TAMEGeomancyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E19A8346484F70F3109FC9 /* TAMEGeomancyTests.swift */; };
+		CA128E4ABA739C146050065F /* OrientationAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67802E71A9B5A72303FBE0F /* OrientationAnalysisView.swift */; };
+		CFB4FEB1A4A811E1200740B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932413559FF6824286494DB /* SettingsView.swift */; };
+		E02245E4D87B60B0C75935B0 /* FlyingStarCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1C36BD325B29A70ECEC1E /* FlyingStarCalculator.swift */; };
+		E103A914CC1E191B3EE8E31E /* TAMETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F25B005ECD7AEB3412912 /* TAMETheme.swift */; };
+		E84FA9CBEBB29EEB9CB9D1B5 /* FloorPlanAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2983CFA8F68D4111C3F78582 /* FloorPlanAnalysisView.swift */; };
+		EE449C9FA9F8FB6517B3DFCC /* PremiumAccessStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD20E41E2745CA43B24421F /* PremiumAccessStore.swift */; };
+		EEB4E3AC6310B91ABE5FCFA6 /* AnnualFortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9E04142370B31FC25D4FF /* AnnualFortuneView.swift */; };
+		EFEF3AB34C99A2A383828CC3 /* PremiumUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0B80ADBD56B135C18D64B /* PremiumUnlockView.swift */; };
+		F22871D4F46CCAA81612BCD7 /* OverviewDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F76498CBE1A52AFC199F0F /* OverviewDashboardView.swift */; };
+		F3FB9E2DE3AC1076F5EF51F1 /* CompassDiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4FCD6E9E0984782501BFB /* CompassDiskView.swift */; };
+		FBD4C5DF3473A240752AB141 /* PolicyCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42AA204450779DF92B523A /* PolicyCenterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A96449BAC10A926FF9532E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A715CB537455B7DF1959AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CF4D730D06C87F206406A1;
+			remoteInfo = TAMEGeomancy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01B0B80ADBD56B135C18D64B /* PremiumUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumUnlockView.swift; sourceTree = "<group>"; };
+		02A5B3DB0F937C890AACE873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06033E4130359A06A30C4152 /* JiuyunOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiuyunOverviewView.swift; sourceTree = "<group>"; };
+		0A0094EA3A94A51BF99F9BBB /* HistoryBackupSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBackupSupport.swift; sourceTree = "<group>"; };
+		0C4CBB8ADCC12578DA36C3AB /* CompassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewModel.swift; sourceTree = "<group>"; };
+		0CD20E41E2745CA43B24421F /* PremiumAccessStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumAccessStore.swift; sourceTree = "<group>"; };
+		15249D86689F8DD803A57764 /* YangGongFenjinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YangGongFenjinView.swift; sourceTree = "<group>"; };
+		19478DF961F58ADE67519A6D /* TAMELocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMELocalization.swift; sourceTree = "<group>"; };
+		19F76498CBE1A52AFC199F0F /* OverviewDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewDashboardView.swift; sourceTree = "<group>"; };
+		1DEE03AEE756CA51D622510F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2071B207C7845CBD8C172149 /* NaqiAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaqiAnalyzer.swift; sourceTree = "<group>"; };
+		2983CFA8F68D4111C3F78582 /* FloorPlanAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanAnalysisView.swift; sourceTree = "<group>"; };
+		2EC9E04142370B31FC25D4FF /* AnnualFortuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnualFortuneView.swift; sourceTree = "<group>"; };
+		39D4FCD6E9E0984782501BFB /* CompassDiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassDiskView.swift; sourceTree = "<group>"; };
+		480D05646FBD4514B54DB738 /* TAMEGeomancyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TAMEGeomancyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C61CFD1DCF7F754CD70DD2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		51A66E3AECB31D59216C534E /* RecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailView.swift; sourceTree = "<group>"; };
+		5717247058E0767D658854AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		71E8172D3DAC6371E61ED4E0 /* ReferenceKnowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceKnowledgeView.swift; sourceTree = "<group>"; };
+		751FF1B58B75F8DA2C0EEEF2 /* TAMEGeomancyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMEGeomancyApp.swift; sourceTree = "<group>"; };
+		76422C390B1043C0A60F6377 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		78F4AF3ED56284B2BC8625FA /* YangGongModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YangGongModels.swift; sourceTree = "<group>"; };
+		7E8DEB8210811FF6557587AD /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		8DC1C36BD325B29A70ECEC1E /* FlyingStarCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingStarCalculator.swift; sourceTree = "<group>"; };
+		93E19A8346484F70F3109FC9 /* TAMEGeomancyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMEGeomancyTests.swift; sourceTree = "<group>"; };
+		9B35B20FFFEBEFEBDC86E040 /* AnalysisHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisHubView.swift; sourceTree = "<group>"; };
+		A1C4EDBE3FB53C165589D413 /* FengShuiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FengShuiModels.swift; sourceTree = "<group>"; };
+		A4BA6C9AA60B7864B83900B7 /* FloorPlanAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanAnalysisViewModel.swift; sourceTree = "<group>"; };
+		A57F25B005ECD7AEB3412912 /* TAMETheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMETheme.swift; sourceTree = "<group>"; };
+		A67802E71A9B5A72303FBE0F /* OrientationAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationAnalysisView.swift; sourceTree = "<group>"; };
+		AEBBF226F2D1601AA7481585 /* BazhaiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BazhaiViewModel.swift; sourceTree = "<group>"; };
+		B72938187EB821BC8D66F2C7 /* BazhaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BazhaiView.swift; sourceTree = "<group>"; };
+		C60125698745E94EF7187FAB /* AnnualFortuneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnualFortuneViewModel.swift; sourceTree = "<group>"; };
+		CB2806BA7AB80326CB0E6B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCFB01341656464347408C05 /* RecordShareSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordShareSupport.swift; sourceTree = "<group>"; };
+		D932413559FF6824286494DB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB42AA204450779DF92B523A /* PolicyCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyCenterView.swift; sourceTree = "<group>"; };
+		DF53B299263785535E2B8CBB /* TAMEGeomancy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TAMEGeomancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59009B66DDF773E8730521A /* FlyingStarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingStarChartView.swift; sourceTree = "<group>"; };
+		E7FA53BFC71A79E6E0EC30D6 /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		EC2241EC041C335863F8C306 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		ECFDC524D4A77A789960D014 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEA2500AE7A3DAA2B76E90BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08B2A8ACB834B076834E1E21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C60125698745E94EF7187FAB /* AnnualFortuneViewModel.swift */,
+				AEBBF226F2D1601AA7481585 /* BazhaiViewModel.swift */,
+				0C4CBB8ADCC12578DA36C3AB /* CompassViewModel.swift */,
+				A4BA6C9AA60B7864B83900B7 /* FloorPlanAnalysisViewModel.swift */,
+				7E8DEB8210811FF6557587AD /* HistoryStore.swift */,
+				0CD20E41E2745CA43B24421F /* PremiumAccessStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3337E3968F68CFA5B534988F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DC1C36BD325B29A70ECEC1E /* FlyingStarCalculator.swift */,
+				2071B207C7845CBD8C172149 /* NaqiAnalyzer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BC1FB80486912C5286895A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF53B299263785535E2B8CBB /* TAMEGeomancy.app */,
+				480D05646FBD4514B54DB738 /* TAMEGeomancyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD7D7A95F79546B9197E6A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B35B20FFFEBEFEBDC86E040 /* AnalysisHubView.swift */,
+				2EC9E04142370B31FC25D4FF /* AnnualFortuneView.swift */,
+				B72938187EB821BC8D66F2C7 /* BazhaiView.swift */,
+				39D4FCD6E9E0984782501BFB /* CompassDiskView.swift */,
+				EC2241EC041C335863F8C306 /* CompassView.swift */,
+				ECFDC524D4A77A789960D014 /* ContentView.swift */,
+				2983CFA8F68D4111C3F78582 /* FloorPlanAnalysisView.swift */,
+				E59009B66DDF773E8730521A /* FlyingStarChartView.swift */,
+				0A0094EA3A94A51BF99F9BBB /* HistoryBackupSupport.swift */,
+				06033E4130359A06A30C4152 /* JiuyunOverviewView.swift */,
+				A67802E71A9B5A72303FBE0F /* OrientationAnalysisView.swift */,
+				19F76498CBE1A52AFC199F0F /* OverviewDashboardView.swift */,
+				DB42AA204450779DF92B523A /* PolicyCenterView.swift */,
+				01B0B80ADBD56B135C18D64B /* PremiumUnlockView.swift */,
+				51A66E3AECB31D59216C534E /* RecordDetailView.swift */,
+				CCFB01341656464347408C05 /* RecordShareSupport.swift */,
+				E7FA53BFC71A79E6E0EC30D6 /* RecordsView.swift */,
+				71E8172D3DAC6371E61ED4E0 /* ReferenceKnowledgeView.swift */,
+				D932413559FF6824286494DB /* SettingsView.swift */,
+				A57F25B005ECD7AEB3412912 /* TAMETheme.swift */,
+				15249D86689F8DD803A57764 /* YangGongFenjinView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ECA1B9BA91EF730BCB0DCF0 /* TAMEGeomancyTests */ = {
+			isa = PBXGroup;
+			children = (
+				93E19A8346484F70F3109FC9 /* TAMEGeomancyTests.swift */,
+			);
+			path = TAMEGeomancyTests;
+			sourceTree = "<group>";
+		};
+		9452A7D6E2AD7363E3B268C6 = {
+			isa = PBXGroup;
+			children = (
+				BE2D18CEBD3DB0FCCA5528B4 /* TAMEGeomancy */,
+				8ECA1B9BA91EF730BCB0DCF0 /* TAMEGeomancyTests */,
+				3BC1FB80486912C5286895A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2D18CEBD3DB0FCCA5528B4 /* TAMEGeomancy */ = {
+			isa = PBXGroup;
+			children = (
+				751FF1B58B75F8DA2C0EEEF2 /* TAMEGeomancyApp.swift */,
+				19478DF961F58ADE67519A6D /* TAMELocalization.swift */,
+				E7FDA3FC346F5BD610E536BF /* Models */,
+				E6A658692AC79D32931258AD /* Resources */,
+				3337E3968F68CFA5B534988F /* Services */,
+				08B2A8ACB834B076834E1E21 /* ViewModels */,
+				3DD7D7A95F79546B9197E6A6 /* Views */,
+			);
+			path = TAMEGeomancy;
+			sourceTree = "<group>";
+		};
+		E6A658692AC79D32931258AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB2806BA7AB80326CB0E6B5E /* Assets.xcassets */,
+				02A5B3DB0F937C890AACE873 /* Info.plist */,
+				CCBC879A58DA4A680C23AD14 /* InfoPlist.strings */,
+				F34AA9925DC7156F0595D241 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E7FDA3FC346F5BD610E536BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76422C390B1043C0A60F6377 /* Direction.swift */,
+				A1C4EDBE3FB53C165589D413 /* FengShuiModels.swift */,
+				78F4AF3ED56284B2BC8625FA /* YangGongModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09CF4D730D06C87F206406A1 /* TAMEGeomancy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7244A4E531BB7375C80583 /* Build configuration list for PBXNativeTarget "TAMEGeomancy" */;
+			buildPhases = (
+				8DC3E32539C551D09C537682 /* Sources */,
+				8FC28E6D2A51E96FDCD22590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAMEGeomancy;
+			packageProductDependencies = (
+			);
+			productName = TAMEGeomancy;
+			productReference = DF53B299263785535E2B8CBB /* TAMEGeomancy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CB3687C12E831D3666B9794 /* TAMEGeomancyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FA50A19996378246F0E1B6 /* Build configuration list for PBXNativeTarget "TAMEGeomancyTests" */;
+			buildPhases = (
+				BDE81B94D708DA71313152F7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41988965F99A2D307CBFAA10 /* PBXTargetDependency */,
+			);
+			name = TAMEGeomancyTests;
+			packageProductDependencies = (
+			);
+			productName = TAMEGeomancyTests;
+			productReference = 480D05646FBD4514B54DB738 /* TAMEGeomancyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23A715CB537455B7DF1959AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					09CF4D730D06C87F206406A1 = {
+						DevelopmentTeam = C3SV2L8GV4;
+						ProvisioningStyle = Automatic;
+					};
+					7CB3687C12E831D3666B9794 = {
+						DevelopmentTeam = C3SV2L8GV4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2762949940F0B393EBF13CC4 /* Build configuration list for PBXProject "TAMEGeomancy" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 9452A7D6E2AD7363E3B268C6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3BC1FB80486912C5286895A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09CF4D730D06C87F206406A1 /* TAMEGeomancy */,
+				7CB3687C12E831D3666B9794 /* TAMEGeomancyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FC28E6D2A51E96FDCD22590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015FD73505D4EAEA9712F4BF /* Assets.xcassets in Resources */,
+				77F65E89900D808A34550E60 /* InfoPlist.strings in Resources */,
+				3F3897BD9FA1F0148B2307FC /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC3E32539C551D09C537682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934943C54092E2BDB34FA424 /* AnalysisHubView.swift in Sources */,
+				EEB4E3AC6310B91ABE5FCFA6 /* AnnualFortuneView.swift in Sources */,
+				0B844CD24B8FF5368BCCB707 /* AnnualFortuneViewModel.swift in Sources */,
+				79CCBA9A706368D41FA150C7 /* BazhaiView.swift in Sources */,
+				01B9AE969ABA9AFC1CA38809 /* BazhaiViewModel.swift in Sources */,
+				F3FB9E2DE3AC1076F5EF51F1 /* CompassDiskView.swift in Sources */,
+				A627D8BED00F02C6488F431F /* CompassView.swift in Sources */,
+				C40811367110980865B614DA /* CompassViewModel.swift in Sources */,
+				AE2C4DD2781E9CCC10CD7FA6 /* ContentView.swift in Sources */,
+				6D8AF63ECF889F2DCEE9CD69 /* Direction.swift in Sources */,
+				B202B584D32A4073B35FCC16 /* FengShuiModels.swift in Sources */,
+				E84FA9CBEBB29EEB9CB9D1B5 /* FloorPlanAnalysisView.swift in Sources */,
+				3B730987D193DBD3FDF5CD57 /* FloorPlanAnalysisViewModel.swift in Sources */,
+				E02245E4D87B60B0C75935B0 /* FlyingStarCalculator.swift in Sources */,
+				02798D4348590D9C164CD2D5 /* FlyingStarChartView.swift in Sources */,
+				959DCA344326940534A3D972 /* HistoryBackupSupport.swift in Sources */,
+				09795C0F0679B8DC0DC683A5 /* HistoryStore.swift in Sources */,
+				23184306453596A7BA2B16B9 /* JiuyunOverviewView.swift in Sources */,
+				9FD238AEBA776E835F20C814 /* NaqiAnalyzer.swift in Sources */,
+				CA128E4ABA739C146050065F /* OrientationAnalysisView.swift in Sources */,
+				F22871D4F46CCAA81612BCD7 /* OverviewDashboardView.swift in Sources */,
+				FBD4C5DF3473A240752AB141 /* PolicyCenterView.swift in Sources */,
+				EE449C9FA9F8FB6517B3DFCC /* PremiumAccessStore.swift in Sources */,
+				EFEF3AB34C99A2A383828CC3 /* PremiumUnlockView.swift in Sources */,
+				822BAA775461CD3826A7E0A7 /* RecordDetailView.swift in Sources */,
+				BB618C1A9186BBA12E35EF77 /* RecordShareSupport.swift in Sources */,
+				5CB61BC64C32A47E17EFFDFA /* RecordsView.swift in Sources */,
+				54C9B2A61CD8BE2C41463BC1 /* ReferenceKnowledgeView.swift in Sources */,
+				CFB4FEB1A4A811E1200740B4 /* SettingsView.swift in Sources */,
+				3ED2395067D3BED19A0944FF /* TAMEGeomancyApp.swift in Sources */,
+				3A4C1B59130410BFED5858A3 /* TAMELocalization.swift in Sources */,
+				E103A914CC1E191B3EE8E31E /* TAMETheme.swift in Sources */,
+				51C92789722F5D1B1FC0ED1E /* YangGongFenjinView.swift in Sources */,
+				990C9FC2E8C9A9C10F6DE55C /* YangGongModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE81B94D708DA71313152F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40F005A547CAE56BBB07895 /* TAMEGeomancyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41988965F99A2D307CBFAA10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09CF4D730D06C87F206406A1 /* TAMEGeomancy */;
+			targetProxy = 5A96449BAC10A926FF9532E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCBC879A58DA4A680C23AD14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C61CFD1DCF7F754CD70DD2A /* en */,
+				1DEE03AEE756CA51D622510F /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F34AA9925DC7156F0595D241 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA2500AE7A3DAA2B76E90BD /* en */,
+				5717247058E0767D658854AD /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2391EC1C88227C89DC4E697C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 7;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C3SV2L8GV4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		648F7A0A8FEF67B66C6824C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tame.geomancy.tests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAMEGeomancy.app/TAMEGeomancy";
+			};
+			name = Release;
+		};
+		6BBAC061E50EEB2AB88A8299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tame.geomancy.tests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAMEGeomancy.app/TAMEGeomancy";
+			};
+			name = Debug;
+		};
+		A18643BFC66B09380789D9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TAMEGeomancy/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tame.geomancy;
+				SDKROOT = iphoneos;
+				STOREKIT_CONFIG_PATH = TAMEGeomancy.storekit;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BF36CA819C4B0FDE53D9C639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TAMEGeomancy/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tame.geomancy;
+				SDKROOT = iphoneos;
+				STOREKIT_CONFIG_PATH = TAMEGeomancy.storekit;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCA7BABEF3B1FD03F08001E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 7;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C3SV2L8GV4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00FA50A19996378246F0E1B6 /* Build configuration list for PBXNativeTarget "TAMEGeomancyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBAC061E50EEB2AB88A8299 /* Debug */,
+				648F7A0A8FEF67B66C6824C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2762949940F0B393EBF13CC4 /* Build configuration list for PBXProject "TAMEGeomancy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2391EC1C88227C89DC4E697C /* Debug */,
+				FCA7BABEF3B1FD03F08001E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6F7244A4E531BB7375C80583 /* Build configuration list for PBXNativeTarget "TAMEGeomancy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF36CA819C4B0FDE53D9C639 /* Debug */,
+				A18643BFC66B09380789D9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23A715CB537455B7DF1959AE /* Project object */;
+}

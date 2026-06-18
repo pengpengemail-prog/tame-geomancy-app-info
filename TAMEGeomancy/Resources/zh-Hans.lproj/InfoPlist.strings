@@ -1,0 +1,6 @@
+"CFBundleDisplayName" = "探觅·空间罗盘";
+"NSCameraUsageDescription" = "用于拍摄户型图进行空间参考分析";
+"NSLocationWhenInUseUsageDescription" = "用于真北校正，提高罗盘精度（可选）";
+"NSMotionUsageDescription" = "用于罗盘方位测量（必需）";
+"NSPhotoLibraryAddUsageDescription" = "用于保存空间分析报告到相册";
+"NSPhotoLibraryUsageDescription" = "用于导入户型图和保存分析报告";

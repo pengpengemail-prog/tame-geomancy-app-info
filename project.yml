@@ -1,0 +1,66 @@
+name: TAMEGeomancy
+options:
+  bundleIdPrefix: com.tame
+  deploymentTarget:
+    iOS: "15.0"
+  developmentLanguage: zh-Hans
+  xcodeVersion: "15.0"
+
+settings:
+  MARKETING_VERSION: "1.0"
+  CURRENT_PROJECT_VERSION: "6"
+  DEVELOPMENT_TEAM: C3SV2L8GV4
+  CODE_SIGN_STYLE: Automatic
+
+targets:
+  TAMEGeomancy:
+    type: application
+    platform: iOS
+    sources:
+      - path: TAMEGeomancy
+        excludes:
+          - "**/*.md"
+    resources:
+      - path: TAMEGeomancy/Resources/Assets.xcassets
+      - path: TAMEGeomancy.storekit
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.tame.geomancy
+      INFOPLIST_FILE: TAMEGeomancy/Resources/Info.plist
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      SWIFT_VERSION: "5.0"
+      TARGETED_DEVICE_FAMILY: "1"
+      SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+      SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+      STOREKIT_CONFIG_PATH: TAMEGeomancy.storekit
+    info:
+      path: TAMEGeomancy/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: 探觅·空间罗盘
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleURLTypes:
+          - CFBundleURLName: com.tame.geomancy
+            CFBundleURLSchemes:
+              - tamegeomancy
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSLocationWhenInUseUsageDescription: 用于真北校正，提高罗盘精度（可选）
+        NSCameraUsageDescription: 用于拍摄户型图进行空间参考分析
+        NSPhotoLibraryUsageDescription: 用于导入户型图和保存分析报告
+        NSPhotoLibraryAddUsageDescription: 用于保存空间分析报告到相册
+        NSMotionUsageDescription: 用于罗盘方位测量（必需）
+
+  TAMEGeomancyTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - TAMEGeomancyTests
+    dependencies:
+      - target: TAMEGeomancy
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.tame.geomancy.tests
+      GENERATE_INFOPLIST_FILE: YES
+      TARGETED_DEVICE_FAMILY: "1"
+      SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+      SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO

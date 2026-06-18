@@ -1,0 +1,14 @@
+.DerivedData/
+.DerivedData*/
+.build-cache/
+*.xcuserstate
+TAMEGeomancy.xcodeproj/xcuserdata/
+AppStoreAssets/**/.DS_Store
+
+# Build artifacts (Xcode Cloud rebuilds from source)
+build/
+.derived-sim/
+.swift-module-cache/
+exports/
+*.xcarchive
+DerivedData/

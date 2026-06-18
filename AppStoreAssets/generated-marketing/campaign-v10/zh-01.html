@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1284, height=2778, initial-scale=1" />
+<style>
+@font-face{font-family:Heiti;src:local("STHeiti");}
+*{box-sizing:border-box}
+body{margin:0;width:1284px;height:2778px;overflow:hidden;font-family:Heiti, -apple-system, BlinkMacSystemFont, sans-serif;color:#111;letter-spacing:0}
+.frame{position:relative;width:1284px;height:2778px;overflow:hidden;background:#19362e}
+.frame:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 720px at 78% 22%,rgba(232,207,143,.16),rgba(232,207,143,0) 68%),linear-gradient(145deg,#142b25 0,#23433a 100%)}
+.frame:after{content:"";position:absolute;right:-240px;top:-170px;width:760px;height:760px;border-radius:50%;border:1px solid rgba(239,222,173,.16);box-shadow:0 0 0 120px rgba(239,222,173,.04),0 0 0 260px rgba(239,222,173,.025)}
+.grain{position:absolute;inset:0;opacity:.11;background-image:radial-gradient(#fff .45px,transparent .6px);background-size:6px 6px}
+.copy{position:absolute;z-index:8;top:104px;left:82px;width:820px;color:#f8f2e4}
+.num{display:flex;align-items:center;gap:26px;color:#d8ba72;font-size:29px;font-weight:800;margin-bottom:26px}
+.num:after{content:"";display:block;width:124px;height:2px;background:currentColor}
+.brand{font-size:25px;font-weight:800;color:#d8ba72;margin-bottom:42px}
+.kicker{font-size:38px;font-weight:800;color:#e8dbc0;margin-bottom:18px}
+h1{margin:0;font-size:92px;line-height:1.02;font-weight:900;max-width:850px}
+.sub{margin-top:28px;font-size:32px;line-height:1.42;color:#e9e2d2;max-width:710px;font-weight:500}
+.phone{position:absolute;z-index:5;width:650px;padding:22px;border-radius:88px;background:#141411;box-shadow:0 48px 108px rgba(20,18,12,.32),inset 0 0 0 2px rgba(255,255,255,.12)}
+.phone:before{content:"";position:absolute;left:50%;top:34px;transform:translateX(-50%);width:178px;height:38px;border-radius:22px;background:#050505;z-index:4}
+.phone:after{content:"";position:absolute;inset:30px;border-radius:66px;border:2px solid rgba(255,255,255,.36);z-index:5;pointer-events:none}
+.phone img{display:block;width:100%;border-radius:64px;background:#faf8f2}
+.shine{position:absolute;inset:24px;border-radius:66px;background:linear-gradient(108deg,rgba(255,255,255,.32),rgba(255,255,255,0) 30%,rgba(255,255,255,.12) 58%,rgba(255,255,255,0));mix-blend-mode:screen;z-index:6;pointer-events:none}
+.phone.left{left:82px;top:760px;transform:rotate(-4deg)}
+.phone.right{right:74px;top:760px;transform:rotate(4deg)}
+.detail{position:absolute;z-index:6;width:450px;height:450px;border-radius:50%;background:url("file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/VerificationShots/compass_pointer_to_marked_ring.png") center 48%/cover no-repeat;box-shadow:0 34px 96px rgba(34,29,18,.22), inset 0 0 0 14px rgba(255,255,255,.72), inset 0 0 0 16px rgba(192,166,104,.46);filter:saturate(.98) contrast(1.03)}
+.detail.left{left:96px;top:1580px}.detail.right{right:108px;top:1540px}
+.proof{position:absolute;z-index:7;display:flex;gap:14px;left:82px;right:82px;bottom:250px;justify-content:flex-end}
+.proof span{padding:20px 26px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(232,218,178,.24);color:#f4ead3;font-size:25px;font-weight:800;box-shadow:0 18px 54px rgba(32,28,18,.08)}
+.brandmark{position:absolute;z-index:8;left:82px;bottom:106px;display:flex;gap:22px;align-items:center;color:#f8f2e4}
+.icon{width:82px;height:82px;border-radius:22px;box-shadow:0 18px 42px rgba(20,18,10,.18)}
+.brandmark b{display:block;font-size:26px}.brandmark span{display:block;font-size:22px;color:#dccfab;margin-top:8px}
+.line{position:absolute;z-index:3;background:rgba(232,218,178,.16)}
+.line.h{left:82px;right:82px;top:1390px;height:1px}.line.v{top:210px;bottom:210px;left:50%;width:1px}
+</style>
+</head>
+<body>
+<main class="frame">
+  <div class="grain"></div><div class="line h"></div><div class="line v"></div>
+  <section class="copy">
+    <div class="num">01</div>
+    <div class="brand">TAME Space Compass / 探觅·空间罗盘</div>
+    <div class="kicker">空间方向</div>
+    <h1>打开就能看清</h1>
+    <div class="sub">用罗盘、户型和记录整理现场判断。</div>
+  </section>
+  <div class="phone left"><img src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/VerificationShots/compass_pointer_to_marked_ring.png" /><div class="shine"></div></div>
+  <div class="detail right"></div>
+  <div class="proof"><span>离线运行</span><span>本地记录</span><span>无需登录</span></div>
+  <section class="brandmark"><img class="icon" src="file:///Users/pengpeng/Downloads/%E4%B8%8B%E8%BD%BD.png" /><div><b>TAME Space Compass</b><span>空间参考工具</span></div></section>
+</main>
+</body>
+</html>

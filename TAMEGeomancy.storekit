@@ -1,0 +1,100 @@
+{
+  "identifier" : "TAMEGeomancyStoreKit",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "12.99",
+      "familySharable" : false,
+      "id" : "com.tame.geomancy.premium.lifetime",
+      "localizations" : [
+        {
+          "description" : "旧版一次性解锁。已购用户继续永久可用。",
+          "displayName" : "TAME Space Compass 永久解锁（旧版）",
+          "locale" : "zh_CN"
+        },
+        {
+          "description" : "Legacy one-time unlock. Existing buyers keep lifetime access.",
+          "displayName" : "TAME Space Compass Premium (Legacy Lifetime)",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.tame.geomancy.premium.lifetime",
+      "referenceName" : "TAME Space Compass Premium Lifetime (Legacy)",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "TAMEGeomancy",
+    "_developerTeamID" : "C3SV2L8GV4",
+    "_lastSynchronizedDate" : 768096000
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21491001",
+      "localizations" : [],
+      "name" : "TAME Space Compass Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "21491011",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "按月订阅，解锁报告分享与保存到相册能力。",
+              "displayName" : "高级订阅 · 按月",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "Monthly subscription. Unlock report sharing and save-to-Photos.",
+              "displayName" : "Premium · Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.tame.geomancy.premium.monthly2",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Space Compass Premium Monthly",
+          "subscriptionGroupID" : "21491001",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "21491012",
+          "introductoryOffer" : {
+            "internalID" : "21491013",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "按年订阅，含 3 天免费试用。年付更划算。",
+              "displayName" : "高级订阅 · 按年",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "Annual subscription with a 3-day free trial. Best value.",
+              "displayName" : "Premium · Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.tame.geomancy.premium.yearly2",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Space Compass Premium Yearly",
+          "subscriptionGroupID" : "21491001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

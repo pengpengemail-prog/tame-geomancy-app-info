@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAME Space Compass Submission Dashboard</title>
+  <style>
+    :root {
+      --bg: #f4f1eb;
+      --card: #ffffff;
+      --ink: #111111;
+      --muted: #6b6b6b;
+      --line: rgba(17, 17, 17, 0.08);
+      --accent: #d8b86a;
+      --warn: #cc7a2f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #f8f5ef 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 18px 40px rgba(17, 17, 17, 0.06);
+      border: 1px solid var(--line);
+    }
+    .hero {
+      background: linear-gradient(135deg, #111111 0%, #252525 100%);
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .brand {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.72);
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(216, 184, 106, 0.18);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .warn {
+      color: var(--warn);
+      font-weight: 700;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: #f7f3ea;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 13px;
+      color: #333;
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="brand">TAME Space Compass</div>
+      <h1 style="margin: 12px 0 0; font-size: 32px;">探觅·空间罗盘 Submission Dashboard</h1>
+      <p class="subtitle">本地提审执行面板。用于快速确认名称、文案、截图、审核备注与当前 blocker。当前结论仍为：<strong>需补充验证后再提交</strong>。</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="pill">Brand</div>
+        <h2>品牌与命名</h2>
+        <ul>
+          <li>对外名称：探觅·空间罗盘 / TAME Space Compass</li>
+          <li>应用内字标：TAME Space Compass / 探觅·空间罗盘</li>
+          <li>审核备注必须解释桌面显示名与应用内锁定组对应关系</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="pill">Build</div>
+        <h2>本地构建</h2>
+        <ul>
+          <li>最新本地状态：构建验证受 CoreSimulatorService / ibtoold / actool 环境链路阻塞</li>
+          <li>仍需 fresh install smoke test</li>
+          <li class="warn">当前环境未完成 xcodebuild test 执行</li>
+        </ul>
+        <div class="mono">./scripts/readiness_check.sh
+./scripts/validate_appstore_screenshots.sh</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Metadata</div>
+        <h2>可直接粘贴字段</h2>
+        <div class="mono">SpringBoard 显示名：探觅·空间罗盘
+名称：探觅·空间罗盘
+副标题：双盘罗盘与空间布局参考
+宣传文本：用双盘罗盘查看坐向，用九宫布局与户型分析整理空间参考。</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Links</div>
+        <h2>仍需补全的线上链接</h2>
+        <ul>
+          <li>Support URL</li>
+          <li>Privacy Policy URL</li>
+          <li>Terms of Use URL</li>
+        </ul>
+        <div class="mono">./scripts/configure_weblegal.sh \
+  --site-root https://pengpengemail-prog.github.io/tame-geomancy-app-info \
+  --support-email pengpengemail@gmail.com</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Screenshots</div>
+        <h2>截图上传前</h2>
+        <ul>
+          <li>zh-Hans 和 en-US 分文件夹，当前本地校验已通过</li>
+          <li>PNG 无 alpha，尺寸一致</li>
+          <li>review-only 素材不要混进版本页</li>
+        </ul>
+        <div class="mono">AppStoreAssets/zh-Hans/
+AppStoreAssets/en-US/
+AppStoreAssets/review-only/</div>
+      </article>
+
+      <article class="card">
+        <div class="pill">Blockers</div>
+        <h2>当前 blocker</h2>
+        <ul>
+          <li>未完成本机构建 / Simulator 链路复核</li>
+          <li>未核对 App Store Connect 当前版本状态</li>
+          <li>未完成 ASC 截图上传后的在线预览核对</li>
+          <li>未完成 fresh install 级验证</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1284, height=2778, initial-scale=1">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1284px;height:2778px;overflow:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",sans-serif;background:#f8f5ec}
+.poster{position:relative;width:1284px;height:2778px;overflow:hidden;color:#111312;background:#f8f5ec}
+.poster:before{content:"";position:absolute;inset:-32px;background:url("file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/AppStoreAssets/background-source/03-silver-flow.jpg") center/cover no-repeat;filter:saturate(.92) contrast(1.06);transform:scale(1.06)}
+.poster:after{content:"";position:absolute;inset:0;background:radial-gradient(860px 720px at 82% 18%,rgba(205,174,102,.30),transparent 66%),radial-gradient(820px 760px at 12% 76%,rgba(255,255,255,.72),transparent 70%),linear-gradient(180deg,rgba(255,255,255,.86),rgba(247,242,230,.58) 45%,rgba(20,27,23,.06));}
+.poster.dark{color:#fbf4e2;background:#0c1512}
+.poster.dark:before{filter:saturate(.78) contrast(1.12) brightness(.72)}
+.poster.dark:after{background:radial-gradient(900px 720px at 76% 20%,rgba(209,169,86,.30),transparent 70%),radial-gradient(760px 760px at 11% 76%,rgba(255,255,255,.10),transparent 72%),linear-gradient(180deg,rgba(8,15,13,.88),rgba(19,34,28,.63) 45%,rgba(6,10,9,.87))}
+.grain{position:absolute;z-index:2;inset:0;opacity:.14;background-image:radial-gradient(rgba(18,16,12,.34) .55px,transparent .8px);background-size:7px 7px;mix-blend-mode:multiply}
+.dark .grain{opacity:.18;background-image:radial-gradient(rgba(255,246,222,.36) .55px,transparent .8px);mix-blend-mode:screen}
+.brand-watermark{position:absolute;z-index:3;right:-280px;top:-245px;width:930px;height:930px;background:url("file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/Design/app-icon-original-geomancy-1024.png") center/contain no-repeat;opacity:.075;filter:grayscale(1)}
+.dark .brand-watermark{opacity:.12;filter:grayscale(1) invert(1)}
+.orbit{position:absolute;z-index:3;border:1.5px solid rgba(171,143,79,.21);border-radius:50%}.orbit-a{right:-430px;top:300px;width:1210px;height:1210px}.orbit-b{left:-315px;bottom:380px;width:760px;height:760px}.dark .orbit{border-color:rgba(230,198,123,.22)}
+.axis-h,.axis-v{position:absolute;z-index:3;background:rgba(60,52,36,.13)}.axis-h{height:1px;left:86px;right:86px;top:1398px}.axis-v{width:1px;top:150px;bottom:212px;left:50%}.dark .axis-h,.dark .axis-v{background:rgba(241,225,178,.18)}
+.brand{position:absolute;z-index:24;left:88px;top:80px;display:flex;align-items:center;gap:18px}.brand img{width:58px;height:58px;border-radius:16px;box-shadow:0 18px 42px rgba(31,25,16,.18)}.brand b,.brand span{display:block}.brand b{font-size:24px;color:#111312}.brand span{margin-top:5px;font-size:17px;font-weight:650;color:#656861}.dark .brand b{color:#fbf4e2}.dark .brand span{color:#d8cfba}
+.copy{position:absolute;z-index:20;left:88px;top:214px;width:850px}.sequence{display:flex;align-items:center;gap:22px;margin-bottom:28px;color:#b8934f;font-size:28px;font-weight:850}.sequence i{display:block;width:116px;height:2px;background:#b8934f}.eyebrow{margin-bottom:34px;color:#8b7140;font-size:24px;font-weight:850}.dark .sequence,.dark .eyebrow{color:#d7b76d}.dark .sequence i{background:#d7b76d}
+h1{margin:0;color:#101210;font-size:98px;line-height:1.01;font-weight:860;letter-spacing:0}.en h1{font-size:80px;line-height:1.04}h1 span{display:block}p{margin:30px 0 0;max-width:720px;color:#60645f;font-size:31px;line-height:1.43;font-weight:560}.dark h1,.dark p{color:#fbf4e2}.dark p{color:#e8deca}
+.badges{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.badges span{display:inline-flex;align-items:center;height:54px;padding:0 20px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(160,140,92,.28);box-shadow:0 14px 38px rgba(54,47,32,.09);color:#6e5a35;font-size:20px;font-weight:760}.dark .badges span{background:rgba(255,248,225,.13);border-color:rgba(235,198,111,.26);color:#f0dfb8}
+.metric{position:absolute;z-index:24;right:88px;top:704px;width:330px;min-height:136px;padding:25px 28px;border-radius:28px;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.84);box-shadow:0 34px 80px rgba(24,31,27,.16);backdrop-filter:blur(18px)}.metric small{display:block;color:#68706b;font-size:18px;font-weight:760}.metric b{display:block;margin-top:10px;color:#111312;font-size:35px;line-height:1.08}.dark .metric{background:rgba(18,26,23,.72);border-color:rgba(229,196,116,.25)}.dark .metric small{color:#d5c9ac}.dark .metric b{color:#fbf4e2}
+footer{position:absolute;z-index:25;left:88px;bottom:82px;max-width:660px;color:rgba(17,19,18,.56);font-size:20px;line-height:1.45;font-weight:650}.dark footer{color:rgba(255,246,222,.66)}
+.device{position:absolute;z-index:15;width:520px;height:1126px;border-radius:70px;padding:18px;background:linear-gradient(90deg,#090a09,#485048 5%,#151716 12%,#090a09 88%,#777366 96%,#161816);box-shadow:inset 0 0 0 2px rgba(255,255,255,.16),inset 22px 0 38px rgba(255,255,255,.09),inset -22px 0 38px rgba(0,0,0,.70),0 52px 130px rgba(0,0,0,.31);filter:drop-shadow(0 64px 82px rgba(6,14,10,.22))}.device-metal{position:absolute;inset:-8px;border-radius:78px;background:linear-gradient(100deg,rgba(255,255,255,.22),transparent 16%,transparent 82%,rgba(255,255,255,.28));pointer-events:none}.screen{position:relative;z-index:3;width:100%;height:100%;border-radius:52px;overflow:hidden;background:#fff}.screen img{width:100%;height:100%;display:block;object-fit:cover}.island{position:absolute;z-index:5;left:50%;top:28px;width:154px;height:45px;transform:translateX(-50%);border-radius:999px;background:#050505;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}.island i{position:absolute;right:24px;top:15px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#405869,#040506 70%)}.side{position:absolute;background:linear-gradient(180deg,#474d47,#111412);box-shadow:0 2px 0 rgba(255,255,255,.10) inset}.side-left{left:-10px;top:226px;width:10px;height:104px;border-radius:10px 0 0 10px}.side-left:after{content:"";position:absolute;left:0;top:156px;width:10px;height:104px;border-radius:10px 0 0 10px;background:inherit}.side-right{right:-9px;top:338px;width:9px;height:150px;border-radius:0 10px 10px 0}.glass{position:absolute;z-index:6;inset:18px;border-radius:52px;background:linear-gradient(112deg,rgba(255,255,255,.28),transparent 20%,transparent 70%,rgba(255,255,255,.10)),linear-gradient(16deg,rgba(255,255,255,0),rgba(255,255,255,.16) 46%,rgba(255,255,255,0) 58%);mix-blend-mode:screen;pointer-events:none}
+.phone-hero{right:140px;bottom:208px;transform:rotate(-4.8deg)}.phone-single{right:150px;bottom:182px;transform:rotate(3.5deg)}.phone-grid{right:132px;bottom:180px;transform:rotate(-4.2deg)}.phone-plan{right:154px;bottom:168px;transform:rotate(3.2deg)}.phone-rooms{right:142px;bottom:180px;transform:rotate(-4.2deg)}.phone-final-a{right:130px;bottom:186px;transform:rotate(-4.4deg)}.phone-final-b{left:120px;bottom:265px;transform:rotate(4.4deg) scale(.78);transform-origin:left bottom}
+.halo{position:absolute;z-index:13;border-radius:50%;box-shadow:0 54px 130px rgba(0,0,0,.28),inset 0 0 0 2px rgba(255,244,210,.35)}.compass-halo{left:120px;bottom:620px;width:600px;height:600px;padding:30px;background:radial-gradient(circle at 34% 26%,#fff7d9,#d6b66c 22%,#4d473a 66%,#191b19 100%)}.compass-halo img{width:100%;height:100%;object-fit:cover;border-radius:50%}.readout{position:absolute;z-index:23;left:154px;bottom:585px;width:490px;padding:28px 34px;border-radius:26px;background:rgba(18,24,21,.78);border:1px solid rgba(220,185,106,.44);box-shadow:0 28px 70px rgba(0,0,0,.24);backdrop-filter:blur(14px);color:#fbf4e2}.readout b{font-size:46px}.readout span{display:block;margin-top:8px;color:#d9ceb6;font-size:24px;font-weight:720}
+.instrument-card{position:absolute;z-index:23;left:92px;width:360px;padding:30px 34px;border-radius:30px;background:rgba(255,250,236,.75);border:1px solid rgba(222,190,118,.48);box-shadow:0 28px 88px rgba(31,25,14,.19);backdrop-filter:blur(18px)}.instrument-card b{display:block;color:#151614;font-size:44px}.instrument-card span{display:block;margin-top:12px;color:#656862;font-size:22px;font-weight:760}.card-one{bottom:1130px}.card-two{bottom:875px}.gold-disc{position:absolute;z-index:24;left:385px;bottom:762px;width:88px;height:88px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff8dc,#deb75f 34%,#72531f 78%);box-shadow:0 18px 54px rgba(82,55,12,.30)}
+.grid-proof{position:absolute;z-index:22;left:92px;bottom:1110px;display:grid;grid-template-columns:repeat(3,152px);gap:13px}.grid-proof span{height:132px;border-radius:9px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(72,61,38,.20);color:#151614;font-size:32px;font-weight:860}.grid-proof span:nth-child(3n+1){background:#eee2bb}.grid-proof span:nth-child(3n+2){background:#dcebe2}.grid-proof span:nth-child(3n){background:#ead7d4}
+.note-card{position:absolute;z-index:23;left:92px;bottom:742px;width:486px;padding:32px 36px;border-radius:30px;background:rgba(255,255,255,.68);border:1px solid rgba(190,164,96,.34);box-shadow:0 28px 80px rgba(43,38,25,.14);backdrop-filter:blur(18px)}.note-card b{display:block;color:#ad8e4e;font-size:30px}.note-card span{display:block;margin-top:13px;color:#62645f;font-size:23px;line-height:1.35;font-weight:700}
+.plan-proof{position:absolute;z-index:20;left:96px;bottom:1010px;width:520px;height:520px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border:2px solid rgba(61,55,39,.52);box-shadow:0 28px 80px rgba(38,31,16,.16)}.plan-proof span{border:1px solid rgba(61,55,39,.36)}.plan-proof span:nth-child(1){background:#dcebe2}.plan-proof span:nth-child(2){background:#eee1bb}.plan-proof span:nth-child(3){background:#dfe9f2}.plan-proof span:nth-child(4){background:#ead7d4}.plan-proof i{position:absolute;left:50%;top:50%;width:28px;height:28px;border-radius:50%;background:#151614;transform:translate(-50%,-50%);box-shadow:0 0 0 14px rgba(177,42,38,.10)}.needle{position:absolute;z-index:23;left:348px;bottom:1390px;width:8px;height:410px;background:#b32927;box-shadow:0 16px 32px rgba(135,25,22,.22)}.needle:before{content:"";position:absolute;left:50%;top:-54px;transform:translateX(-50%);border-left:32px solid transparent;border-right:32px solid transparent;border-bottom:74px solid #b32927}.plan-note{left:585px;bottom:1210px}
+.room-proof{position:absolute;z-index:22;left:92px;bottom:1120px;display:flex;flex-direction:column;gap:25px}.room-proof span{position:relative;width:370px;padding:28px 32px;border-radius:24px;background:#fff;border:1px solid rgba(190,164,96,.28);box-shadow:0 18px 54px rgba(43,38,25,.11);font-size:31px;font-weight:850;color:#151614;transform:translateX(calc(var(--i) * 22px))}.room-proof span:nth-child(1){background:#dceee4}.room-proof span:nth-child(2){background:#efe8c8}.room-proof span:nth-child(3){background:#dfe9f3}.room-proof span:nth-child(4){background:#ead7d4}.room-proof i{position:absolute;right:26px;top:50%;width:68px;height:2px;background:#b8934f}
+.closing{position:absolute;z-index:25;left:88px;bottom:430px;width:600px;color:#fbf4e2}.closing img{width:92px;height:92px;border-radius:25px;box-shadow:0 22px 60px rgba(0,0,0,.28);margin-bottom:22px}.closing b{display:block;font-size:36px}.closing span{display:block;margin-top:12px;color:#ded2bb;font-size:23px}
+</style>
+</head>
+<body>
+<main class="poster light zh">
+  <div class="grain"></div>
+  <div class="brand-watermark"></div>
+  <div class="orbit orbit-a"></div>
+  <div class="orbit orbit-b"></div>
+  <div class="axis-h"></div>
+  <div class="axis-v"></div>
+  
+    <div class="brand">
+      <img src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/Design/app-icon-original-geomancy-1024.png" alt="">
+      <div>
+        <b>探觅·空间罗盘</b>
+        <span>空间与民俗文化参考工具</span>
+      </div>
+    </div>
+  
+    <section class="copy">
+      <div class="sequence">05<i></i></div>
+      <div class="eyebrow">空间分组</div>
+      <h1><span>卧室书房</span><span>分开判断</span></h1>
+      <p>每个房间独立记录，现场复盘和后续整理都更有秩序。</p>
+      <div class="badges"><span>卧室</span><span>书房</span><span>客厅</span><span>玄关</span></div>
+    </section>
+    <aside class="metric">
+      <small>记录方式</small>
+      <b>按房间整理</b>
+    </aside>
+    <footer>仅作空间与民俗文化参考，不承诺现实结果。</footer>
+  
+      
+    <div class="device phone-rooms">
+      <div class="device-metal"></div>
+      <div class="screen"><img src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/VerificationShots/yanggong-fenjin-clean.png" alt=""></div>
+      <div class="island"><i></i></div>
+      <div class="side side-left"></div>
+      <div class="side side-right"></div>
+      <div class="glass"></div>
+    </div>
+      <div class="room-proof"><span style="--i:0">卧室<i></i></span><span style="--i:1">书房<i></i></span><span style="--i:2">客厅<i></i></span><span style="--i:3">玄关<i></i></span></div>
+</main>
+</body>
+</html>

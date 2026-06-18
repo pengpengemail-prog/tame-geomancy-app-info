@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1284, height=2778, initial-scale=1">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1284px;height:2778px;overflow:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Hiragino Sans GB",sans-serif}
+.poster{position:relative;width:1284px;height:2778px;overflow:hidden;background:#f7f4ea;color:#151614}
+.poster:before{content:"";position:absolute;inset:-18px;background:url("file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/AppStoreAssets/background-source/01-space-ring-mountains.jpg") center/cover no-repeat;filter:saturate(.9) contrast(1.04);transform:scale(1.04)}
+.poster:after{content:"";position:absolute;inset:0;background:
+  radial-gradient(800px 680px at 76% 18%,rgba(219,184,105,.30),transparent 66%),
+  radial-gradient(760px 650px at 18% 64%,rgba(255,255,255,.72),transparent 70%),
+  linear-gradient(180deg,rgba(250,248,241,.84),rgba(241,235,220,.50) 42%,rgba(15,20,18,.10));}
+.poster.dark{background:#13241e;color:#fbf4e2}
+.poster.dark:before{filter:saturate(.8) contrast(1.1) brightness(.72)}
+.poster.dark:after{background:
+  radial-gradient(920px 720px at 74% 22%,rgba(209,169,86,.30),transparent 68%),
+  radial-gradient(760px 720px at 14% 72%,rgba(255,255,255,.08),transparent 72%),
+  linear-gradient(180deg,rgba(12,23,20,.88),rgba(20,38,32,.62) 48%,rgba(10,15,14,.86));}
+.noise{position:absolute;z-index:2;inset:0;opacity:.16;background-image:radial-gradient(rgba(20,18,13,.30) .55px,transparent .75px);background-size:7px 7px;mix-blend-mode:multiply}
+.dark .noise{opacity:.20;background-image:radial-gradient(rgba(255,246,222,.34) .5px,transparent .75px);mix-blend-mode:screen}
+.brand-orbit{position:absolute;z-index:3;right:-270px;top:-245px;width:920px;height:920px;background:url("file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/Design/app-icon-original-geomancy-1024.png") center/contain no-repeat;opacity:.08;filter:grayscale(1)}
+.dark .brand-orbit{opacity:.12;filter:grayscale(1) invert(1)}
+.orbit{position:absolute;z-index:3;border-radius:50%;border:1.5px solid rgba(163,140,91,.20)}
+.dark .orbit{border-color:rgba(230,199,123,.22)}
+.orbit-a{width:1200px;height:1200px;right:-420px;top:320px}
+.orbit-b{width:760px;height:760px;left:-300px;bottom:410px}
+.axis{position:absolute;z-index:3;background:rgba(54,48,36,.13)}
+.dark .axis{background:rgba(241,225,178,.18)}
+.axis-h{height:1px;left:86px;right:86px;top:1400px}
+.axis-v{width:1px;top:150px;bottom:210px;left:50%}
+.copy{position:absolute;z-index:20;left:88px;top:92px;width:900px}
+.seq{display:flex;align-items:center;gap:22px;color:#b8934f;font-weight:800;font-size:28px;margin-bottom:28px}
+.seq:after{content:"";display:block;width:122px;height:2px;background:#b8934f}
+.eyebrow{color:#b8934f;font-weight:800;font-size:25px;margin-bottom:34px}
+h1{margin:0;font-size:90px;line-height:.99;letter-spacing:0;font-weight:850;color:#151614}
+.en h1{font-size:76px;line-height:1.02}
+h1 span{display:block}
+p{margin:30px 0 0;max-width:760px;color:#5e625d;font-size:31px;line-height:1.38;font-weight:500}
+.dark h1,.dark p{color:#fbf4e2}.dark p{color:#e8deca}.dark .seq,.dark .eyebrow{color:#d6b66c}.dark .seq:after{background:#d6b66c}
+.proof{position:absolute;z-index:24;left:88px;bottom:118px;display:flex;align-items:center;gap:22px}
+.proof img{width:76px;height:76px;border-radius:20px;box-shadow:0 18px 42px rgba(26,22,16,.20)}
+.proof b,.proof span{display:block}.proof b{color:#151614;font-size:27px}.proof span{margin-top:8px;color:#666862;font-size:22px;font-weight:650}
+.dark .proof b{color:#fbf4e2}.dark .proof span{color:#ded3bb}
+.device-real{position:absolute;z-index:14;width:calc(1470px * var(--device-scale));height:calc(3000px * var(--device-scale));transform-origin:center center}
+.device-body{position:absolute;inset:0}
+.device-shadow{position:absolute;inset:3.2% 2.8%;border-radius:12%/6%;background:rgba(0,0,0,.52);filter:blur(58px);transform:translateY(56px) scale(.96)}
+.device-screen{position:absolute;left:5.102%;top:2.2%;width:89.796%;height:95.6%;object-fit:cover;border-radius:7.3%/3.55%;filter:saturate(1.02) contrast(1.03)}
+.device-frame{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 22px 50px rgba(0,0,0,.18))}
+.device-glass{position:absolute;left:5.102%;top:2.2%;width:89.796%;height:95.6%;border-radius:7.3%/3.55%;background:linear-gradient(112deg,rgba(255,255,255,.30),transparent 27%,rgba(255,255,255,.10) 61%,transparent);mix-blend-mode:screen;pointer-events:none}
+.device-reflection{position:absolute;left:0;right:0;top:92%;height:34%;transform:scaleY(-1);opacity:.24;filter:blur(.7px)}
+.reflection-mask{position:absolute;inset:0;overflow:hidden;mask-image:linear-gradient(to bottom,rgba(0,0,0,.48),transparent 74%);-webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.48),transparent 74%)}
+.reflection-screen,.reflection-frame{position:absolute}
+.tilt-front{transform:rotate(3.2deg)}.tilt-back{transform:rotate(-4.4deg)}
+.stage-plinth{position:absolute;z-index:8;left:120px;top:1905px;width:1050px;height:300px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(241,219,164,.36),rgba(0,0,0,.10) 46%,transparent 72%);filter:blur(3px)}
+.compass-disc{position:absolute;z-index:16;left:126px;top:975px;width:670px;height:670px;border-radius:50%;padding:31px;background:radial-gradient(circle at 34% 26%,#fff7d9,#d6b66c 22%,#4d473a 66%,#191b19 100%);box-shadow:0 56px 140px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,244,210,.42)}
+.compass-disc img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:inset 0 0 0 3px rgba(255,255,255,.38)}
+.compass-glass{position:absolute;inset:40px;border-radius:50%;background:linear-gradient(128deg,rgba(255,255,255,.32),transparent 38%,rgba(255,255,255,.12));mix-blend-mode:screen}
+.hero-phone{right:80px;top:850px}.hero-readout{position:absolute;z-index:22;left:164px;top:1655px;width:500px;padding:28px 34px;border-radius:26px;background:rgba(18,24,21,.78);border:1px solid rgba(220,185,106,.44);box-shadow:0 28px 70px rgba(0,0,0,.26);backdrop-filter:blur(14px);color:#fbf4e2}
+.hero-readout b{font-size:46px}.hero-readout span{display:block;margin-top:8px;font-size:24px;color:#d9ceb6;font-weight:650}
+.single-phone{right:96px;top:865px}.reading-card{position:absolute;z-index:23;left:92px;width:360px;padding:30px 34px;border-radius:30px;background:rgba(255,250,236,.75);border:1px solid rgba(222,190,118,.48);box-shadow:0 28px 88px rgba(31,25,14,.19);backdrop-filter:blur(18px)}
+.reading-card b{display:block;font-size:44px;color:#151614}.reading-card span{display:block;margin-top:12px;color:#656862;font-size:22px;font-weight:700}.card-a{top:960px}.card-b{top:1215px}
+.gold-token{position:absolute;z-index:24;left:385px;top:1445px;width:88px;height:88px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff8dc,#deb75f 34%,#72531f 78%);box-shadow:0 18px 54px rgba(82,55,12,.30)}
+.split-phone{right:96px;top:930px}.grid-block{position:absolute;z-index:22;left:94px;top:910px;display:grid;grid-template-columns:repeat(3,152px);gap:13px}
+.grid-block div{height:132px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:850;color:#151614;border:1px solid rgba(72,61,38,.20)}
+.grid-block div:nth-child(3n+1){background:#eee2bb}.grid-block div:nth-child(3n+2){background:#dcebe2}.grid-block div:nth-child(3n){background:#ead7d4}
+.callout-panel{position:absolute;z-index:22;left:94px;top:1505px;width:480px;padding:32px 36px;border-radius:30px;background:rgba(255,255,255,.68);border:1px solid rgba(190,164,96,.34);box-shadow:0 28px 80px rgba(43,38,25,.14);backdrop-filter:blur(18px)}
+.callout-panel b{display:block;font-size:30px;color:#ad8e4e}.callout-panel span{display:block;margin-top:13px;font-size:23px;line-height:1.35;color:#62645f;font-weight:650}
+.map-phone{right:98px;top:1010px}.floor-plan{position:absolute;z-index:20;left:96px;top:920px;width:520px;height:520px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border:2px solid rgba(61,55,39,.52);box-shadow:0 28px 80px rgba(38,31,16,.16)}
+.floor-plan div{border:1px solid rgba(61,55,39,.36)}.floor-plan div:nth-child(1){background:#dcebe2}.floor-plan div:nth-child(2){background:#eee1bb}.floor-plan div:nth-child(3){background:#dfe9f2}.floor-plan div:nth-child(4){background:#ead7d4}.floor-plan i{position:absolute;left:50%;top:50%;width:28px;height:28px;border-radius:50%;background:#151614;transform:translate(-50%,-50%);box-shadow:0 0 0 14px rgba(177,42,38,.10)}
+.red-needle{position:absolute;z-index:23;left:348px;top:778px;width:8px;height:410px;background:#b32927;box-shadow:0 16px 32px rgba(135,25,22,.22)}
+.red-needle:before{content:"";position:absolute;left:50%;top:-54px;transform:translateX(-50%);border-left:32px solid transparent;border-right:32px solid transparent;border-bottom:74px solid #b32927}
+.map-label{position:absolute;z-index:24;left:585px;top:900px;width:430px;padding:30px 34px;border-radius:30px;background:rgba(255,255,255,.70);border:1px solid rgba(190,164,96,.36);box-shadow:0 28px 80px rgba(43,38,25,.14);backdrop-filter:blur(18px)}
+.map-label b{display:block;color:#ad8e4e;font-size:30px}.map-label span{display:block;margin-top:12px;color:#62645f;font-size:23px;font-weight:650}
+.rooms-phone{right:94px;top:890px}.room-stack{position:absolute;z-index:22;left:92px;top:915px;display:flex;flex-direction:column;gap:25px}
+.room-stack div{position:relative;width:365px;padding:28px 32px;border-radius:24px;background:#fff;border:1px solid rgba(190,164,96,.28);box-shadow:0 18px 54px rgba(43,38,25,.11);font-size:31px;font-weight:850;color:#151614;transform:translateX(calc(var(--i) * 22px))}
+.room-stack div:nth-child(1){background:#dceee4}.room-stack div:nth-child(2){background:#efe8c8}.room-stack div:nth-child(3){background:#dfe9f3}.room-stack div:nth-child(4){background:#ead7d4}
+.room-stack span{position:absolute;right:26px;top:50%;width:68px;height:2px;background:#b8934f}
+.soft-lens{position:absolute;z-index:8;left:-60px;bottom:170px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.70),rgba(219,190,120,.16) 46%,transparent 70%);filter:blur(3px)}
+.final-phone-one{right:104px;top:850px}.final-phone-two{left:95px;top:1150px}.closing-mark{position:absolute;z-index:25;left:90px;bottom:315px;width:670px;color:#fbf4e2}
+.closing-mark img{width:102px;height:102px;border-radius:28px;box-shadow:0 22px 60px rgba(0,0,0,.28);margin-bottom:26px}
+.closing-mark b{display:block;font-size:42px}.closing-mark span{display:block;margin-top:12px;font-size:26px;color:#ded2bb}
+</style>
+</head>
+<body>
+<main class="poster dark en">
+  
+    <div class="noise"></div>
+    <div class="brand-orbit"></div>
+    <div class="orbit orbit-a"></div>
+    <div class="orbit orbit-b"></div>
+    <div class="axis axis-h"></div>
+    <div class="axis axis-v"></div>
+    <section class="copy">
+      <div class="seq"><span>01</span></div>
+      <div class="eyebrow">TAME Space Compass</div>
+      <h1><span>Precise Orientation</span><span>At A Glance</span></h1>
+      <p>Bring compass, direction, and spatial context into one field view.</p>
+    </section>
+    <section class="proof">
+      <img src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/Design/app-icon-original-geomancy-1024.png">
+      <div>
+        <b>Spatial read</b>
+        <span>185° S</span>
+      </div>
+    </section>
+  
+      <div class="stage-plinth"></div>
+      
+    <div class="compass-disc">
+      <img src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/VerificationShots/compass_red_pointer_arrow_unified.png">
+      <div class="compass-glass"></div>
+    </div>
+      
+    <div class="device-real hero-phone tilt-back" style="--device-scale:0.58">
+      <div class="device-shadow"></div>
+      <div class="device-body">
+        <img class="device-screen" src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/VerificationShots/compass_red_pointer_arrow_unified.png">
+        <img class="device-frame" src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/%E7%AE%97%E5%91%BD/LumaBaziIOS/node_modules/appshot-cli/frames/iPhone%2016%20Pro%20Max%20Portrait.png">
+        <div class="device-glass"></div>
+      </div>
+      <div class="device-reflection">
+        <div class="reflection-mask">
+          <img class="device-screen reflection-screen" src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/TAMEGeomancy/VerificationShots/compass_red_pointer_arrow_unified.png">
+          <img class="device-frame reflection-frame" src="file:///Users/pengpeng/Desktop/codex%E5%B7%A5%E4%BD%9C%E5%8C%BA/%E7%AE%97%E5%91%BD/LumaBaziIOS/node_modules/appshot-cli/frames/iPhone%2016%20Pro%20Max%20Portrait.png">
+        </div>
+      </div>
+    </div>
+      <div class="hero-readout"><b>185° S</b><span>Spatial direction · South</span></div>
+</main>
+</body>
+</html>

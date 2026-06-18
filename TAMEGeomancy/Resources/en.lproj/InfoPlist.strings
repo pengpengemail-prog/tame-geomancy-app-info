@@ -1,0 +1,6 @@
+"CFBundleDisplayName" = "TAME Space Compass";
+"NSCameraUsageDescription" = "Used to capture floor plans for geomancy review.";
+"NSLocationWhenInUseUsageDescription" = "Used to calibrate true north for higher compass accuracy (optional).";
+"NSMotionUsageDescription" = "Used for compass orientation measurement (required).";
+"NSPhotoLibraryAddUsageDescription" = "Used to save geomancy report cards to Photos.";
+"NSPhotoLibraryUsageDescription" = "Used to import floor plans and save analysis reports.";

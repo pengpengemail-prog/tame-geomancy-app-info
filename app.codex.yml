@@ -1,0 +1,39 @@
+app_name: "TAMEGeomancy"
+display_name: "探觅·空间罗盘"
+brand_family: "TAME"
+bundle_id: "com.tame.geomancy"
+project_root: "/Users/pengpeng/Desktop/codex工作区/TAMEGeomancy"
+scheme: "TAMEGeomancy"
+project_kind: "xcodegen"
+target_type: "ios-app"
+version: "1.0"
+build: "6"
+platform: "ios"
+minimum_ios: "15.0"
+supports_subscriptions: false
+uses_iap: true
+monetization:
+  model: "one_time_unlock"
+  product_id: "com.tame.geomancy.premium.lifetime"
+  recurring_billing: false
+requires_real_device_smoke: true
+locales:
+  - "en-US"
+  - "zh-Hans"
+screenshot_locale_dirs:
+  en-US: "marketing/appstore/screenshots/en-US/iphone-6.9"
+  zh-Hans: "marketing/appstore/screenshots/zh-Hans/iphone-6.9"
+legal:
+  privacy_url: "https://pengpengemail-prog.github.io/tame-geomancy-app-info/privacy-policy.html"
+  support_url: "https://pengpengemail-prog.github.io/tame-geomancy-app-info/support.html"
+  terms_url: "https://pengpengemail-prog.github.io/tame-geomancy-app-info/terms-of-use.html"
+app_store:
+  app_store_id: "6768040370"
+  team_id: "C3SV2L8GV4"
+  asc_issuer_id: "b88a3dc3-7f22-48df-b6a4-d93d08e29f92"
+  asc_key_id: ""
+  asc_private_key_path: ""
+paths:
+  marketing_root: "marketing/appstore"
+  legal_root: "marketing/legal"
+  scripts_root: "scripts"
