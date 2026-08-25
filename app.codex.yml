@@ -6,16 +6,20 @@ project_root: "/Users/pengpeng/Desktop/codex工作区/TAMEGeomancy"
 scheme: "TAMEGeomancy"
 project_kind: "xcodegen"
 target_type: "ios-app"
-version: "1.0"
-build: "6"
+version: "1.0.2"
+build: "8"
 platform: "ios"
 minimum_ios: "15.0"
-supports_subscriptions: false
+supports_subscriptions: true
 uses_iap: true
 monetization:
-  model: "one_time_unlock"
-  product_id: "com.tame.geomancy.premium.lifetime"
-  recurring_billing: false
+  model: "subscription_plus_lifetime"
+  product_ids:
+    monthly: "com.tame.geomancy.premium.monthly2"
+    yearly: "com.tame.geomancy.premium.yearly2"
+  recurring_billing: true
+  legacy_product_ids:
+    - "com.tame.geomancy.premium.lifetime"
 requires_real_device_smoke: true
 locales:
   - "en-US"
